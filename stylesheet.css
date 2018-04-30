@@ -28,11 +28,18 @@ button {
     transform: scale3d(1, 1, 1);
   }
 }
-.pulse-1 {
+.pulse-1, .pulse-2 {
   animation-duration: 1s;
   animation-name: pulse;
+}
+.pulse-1 {
   animation-delay: 2s;
-
+}
+.pulse-2 {
+  animation-play-state: running;
+}
+.pulse-2:hover {
+  animation-play-state: paused;
 }
 @keyframes ease {
   0% {
