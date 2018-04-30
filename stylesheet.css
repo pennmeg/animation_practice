@@ -15,11 +15,11 @@ button {
   font-weight: 600;
   animation-iteration-count: infinite;
 }
-@keyframes pulse {
+@keyframes pulse { /* defines styles along the animation sequence; pulse is the name of the animation identifier */
   0% {
     transform: scale3d(1, 1, 1);
   }
-  50%{
+  50% {
     transform: scale3d(1.1, 1.1, 1.1);
   }
   100% {
