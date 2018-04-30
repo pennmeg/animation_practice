@@ -17,10 +17,10 @@ button {
 }
 @keyframes pulse { /* defines styles along the animation sequence; pulse is the name of the animation identifier */
   0% {
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); /* resizes an element in 3d space */
   }
   50% {
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   100% {
     transform: scale3d(1, 1, 1);
