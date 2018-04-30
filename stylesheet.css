@@ -24,13 +24,15 @@ button {
     transform: scale3d(1.1, 1.1, 1.1);
   }
   100% {
-    /* x-cor, y-cor, z-com */
+    /* x-cor, y-cor, z-com; to-do: play with z-com and have a better idea of its impact */
     transform: scale3d(1, 1, 1);
   }
 }
 .pulse-1 {
   animation-duration: 1s;
   animation-name: pulse;
+  animation-delay: 2s;
+
 }
 @keyframes ease {
   0% {
