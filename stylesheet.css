@@ -25,6 +25,7 @@ button {
   }
   100% {
     /* x-cor, y-cor, z-com; to-do: play with z-com and have a better idea of its impact */
+    /* change cords to see pulse-3 forwards in action */
     transform: scale3d(1, 1, 1);
   }
 }
@@ -40,6 +41,12 @@ button {
 }
 .pulse-2:hover {
   animation-play-state: paused;
+}
+.pulse-3 {
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-fill-mode: forwards;
 }
 @keyframes ease {
   0% {
