@@ -6,6 +6,7 @@ html, body {
 }
 button {
   display: block;
+  position: relative;
   margin: 0 auto;
   background: #BD93D8;
   padding: 15px 40px;
@@ -20,13 +21,29 @@ button {
     transform: scale3d(1, 1, 1); /* resizes an element in 3d space */
   }
   50% {
-    transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.1, 1.1, 1.1);
   }
   100% {
+    /* x-cor, y-cor, z-com */
     transform: scale3d(1, 1, 1);
   }
 }
-.animation {
+.pulse-1 {
   animation-duration: 1s;
   animation-name: pulse;
+}
+@keyframes fade {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(10px); /* repositions the eased-in opvject by 10px */
+    opacity: 1;
+  }
+}
+.fade-1 {
+  animation-duration: 3s;
+  animation-name: fade;
+  animation-timing-function: ease-in;
 }
