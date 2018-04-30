@@ -51,8 +51,17 @@ button {
     opacity: 1;
   }
 }
-.ease-1 {
+.ease-1, .ease-2, .ease-3 {
   animation-duration: 3s;
   animation-name: ease;
+}
+.ease-1 {
   animation-timing-function: ease-in;
+}
+.ease-2 {
+  animation-direction: reverse;
+  /* takes the keyframe and determines the direction */
+}
+.ease-3 {
+  animation-direction: alternate;
 }
