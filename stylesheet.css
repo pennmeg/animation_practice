@@ -14,7 +14,7 @@ button {
   color: #FFF;
   font-size: 16px;
   font-weight: 600;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; /* animation-interation-count can be infinite, run X number of times, or inherit from the parent */
 }
 @keyframes pulse { /* defines styles along the animation sequence; pulse is the name of the animation identifier */
   0% {
